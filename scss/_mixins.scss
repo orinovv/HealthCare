@@ -1,0 +1,92 @@
+@mixin back {
+    background: $back;
+}
+@mixin jcrow {
+    display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+}
+@mixin nojcrow {
+    display: flex;
+                flex-direction: row;
+    
+}
+@mixin chats {
+    background: radial-gradient(103.57% 103.57% at 50% 0%, #FDFEFE 0%, #FDFEFE 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+/* Shadow */
+
+box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+padding: 8px;
+border-radius: 50%;
+}
+@mixin poa($t , $l, $r) {
+    position: absolute;
+            z-index: 6;
+            top:$t;
+            left: $l;
+            right: $r;
+}
+@mixin roboto500 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+
+color: #3D3D3F;
+}
+@mixin roboto400 {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.5);
+}
+@mixin rattop {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+/* or 267% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+
+/* Black secendary */
+
+color: #A0A2B3;
+margin-bottom: 11px;
+}
+@mixin ratb {
+    padding-left: 7px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 12px;
+/* or 267% */
+
+display: flex;
+align-items: center;
+
+/* Black */
+
+color: #636481;
+
+}
+@mixin linee($w) {
+    height: 4.23px;
+    width: $w;
+    background: #E4F3FF;
+    border-radius: 5px;
+}
